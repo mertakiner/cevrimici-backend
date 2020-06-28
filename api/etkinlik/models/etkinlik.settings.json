@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etkinliks",
+  "info": {
+    "name": "Etkinlik"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Period": {
+      "type": "decimal"
+    },
+    "owners": {
+      "via": "etkinliks",
+      "collection": "owner"
+    }
+  }
+}

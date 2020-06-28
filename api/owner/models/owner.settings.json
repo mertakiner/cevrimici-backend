@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Owner",
+  "info": {
+    "name": "Owner"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "etkinliks": {
+      "collection": "etkinlik",
+      "via": "owners",
+      "dominant": true
+    },
+    "Owner": {
+      "type": "string"
+    }
+  }
+}

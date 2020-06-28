@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/etkinliks",
+      "handler": "etkinlik.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/etkinliks/count",
+      "handler": "etkinlik.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/etkinliks/:id",
+      "handler": "etkinlik.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/etkinliks",
+      "handler": "etkinlik.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/etkinliks/:id",
+      "handler": "etkinlik.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/etkinliks/:id",
+      "handler": "etkinlik.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
